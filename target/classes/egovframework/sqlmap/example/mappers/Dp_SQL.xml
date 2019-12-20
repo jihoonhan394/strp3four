@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.example.dp.service.impl.DpMapper">
+<select id="selectDpMainMngMstServiceList" resultType="egovMap">
+/** [Dp_SQL.xml][egovframework.example.dp.service.impl.DpMapper.selectDpMainMngMstServiceList][메인전시 그리드 조회][hanq] */
+SELECT MAIN_MNG_NO
+			, SUBJ
+			, CONCAT (DATE_FORMAT(DP_STRT_DT, '%y-%m-%d'), '~' , DATE_FORMAT(DP_END_DT, '%y-%m-%d')) DP_DT
+			, DP_YN
+			, MAIN_SP
+			,REGR
+			, DATE_FORMAT(REG_DT, '%y-%m-%d') REG_DT
+	FROM DP_MAIN_MNG
+</select>
+	
+</mapper>

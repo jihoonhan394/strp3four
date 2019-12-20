@@ -19,7 +19,7 @@
             <dd>
                 <ul>
                     <li class="on">
-                        <a href="<c:url value='/dpBnnrMng.do' />" class="ellipsis">배너관리</a>
+                        <a href="<c:url value='/mainDpMngMstInit.do' />" class="ellipsis">메인 전시 관리</a>
                     </li>
                 </ul>
             </dd>
