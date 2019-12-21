@@ -63,7 +63,7 @@ function initGridFn() {
 $(function() {
 	
 	//그리드 초기화
-	initC.initGridA();
+	initC.initGridA("test");
 });
    	
 </script>
